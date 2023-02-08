@@ -30,15 +30,7 @@ const Footer = ({}: Props) => {
           <li>
             <a href="#">FAQ</a>
           </li>
-          <li>
-            <a href="#">shipping</a>
-          </li>
-          <li>
-            <a href="#">returns</a>
-          </li>
-          <li>
-            <a href="#">order status</a>
-          </li>
+          
           <li>
             <a href="#">payment options</a>
           </li>
