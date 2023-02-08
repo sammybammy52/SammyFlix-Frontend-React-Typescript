@@ -17,13 +17,15 @@ type Props = {
 };
 
 const MovieSection = ({ title, movies }: Props) => {
-  const [swiper, setSwiper] = React.useState(null);
+  const [swiper, setSwiper] = React.useState();
 
   const nexto = () => {
+    // @ts-ignore
     swiper.slideNext();
   };
 
   const prev = () => {
+    // @ts-ignore
     swiper.slidePrev();
   };
 
@@ -62,6 +64,7 @@ const MovieSection = ({ title, movies }: Props) => {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(s) => {
           //console.log("initialize swiper", s);
+          // @ts-ignore
           setSwiper(s);
         }}
       >
