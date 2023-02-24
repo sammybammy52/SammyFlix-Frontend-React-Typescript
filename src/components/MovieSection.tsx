@@ -32,16 +32,16 @@ const MovieSection = ({ title, movies }: Props) => {
   return (
     <div className="movie-section pt-20 relative">
       <div className="flex ml-10 gap-3 hover:gap-6 hover:scale-105 hover:pl-4 transition-all">
-        <h3 className="text-purple-700 text-2xl  mt-3">{title}</h3>
-        <ArrowLongRightIcon className="h-[56px] w-[56px] text-purple-700" />
+        <h3 className="text-purple-700 text-2xl max-[414px]:text-xl mt-3">{title}</h3>
+        <ArrowLongRightIcon className="h-[56px] w-[56px] max-[414px]:h-[36px] max-[414px]:w-[36px] max-[414px]:mt-2 text-purple-700" />
       </div>
 
       <ChevronRightIcon
-        className="h-[56px] w-[56px] rounded-[40px] p-[10px] bg-white text-black opacity-50 hover:scale-110 hover:opacity-100 transition-all absolute right-0 z-10 bottom-[230px]"
+        className="h-[56px] w-[56px] rounded-[40px] p-[10px] bg-white text-black opacity-50 hover:scale-110 hover:opacity-100 transition-all absolute right-0 z-10 bottom-[180px] max-[556px]:hidden"
         onClick={nexto}
       />
       <ChevronLeftIcon
-        className="h-[56px] w-[56px] rounded-[40px]  p-[10px] bg-white text-black opacity-50 hover:scale-110 hover:opacity-100 transition-all absolute left-0 z-10  bottom-[230px]"
+        className="h-[56px] w-[56px] rounded-[40px]  p-[10px] bg-white text-black opacity-50 hover:scale-110 hover:opacity-100 transition-all absolute left-0 z-10  bottom-[180px] max-[556px]:hidden"
         onClick={prev}
       />
       <Swiper

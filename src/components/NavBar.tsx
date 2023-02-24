@@ -28,8 +28,8 @@ const NavBar = () => {
     <div
       className={
         fix
-          ? "  w-[100%] h-20 fixed z-20 bg-black transition-all duration-300 max-[800px]:bg-black"
-          : "  w-[100%] h-20 fixed z-[2] bg-transparent transition-all duration-300 max-[800px]:bg-black"
+          ? "  w-[100%] fixed z-20 bg-black transition-all duration-300 max-[800px]:bg-black"
+          : "  w-[100%] fixed z-[2] bg-transparent transition-all duration-300 max-[800px]:bg-black"
       }
     >
       <div className="desktop-nav grid grid-cols-4 pt-3 max-[800px]:hidden">
@@ -67,7 +67,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="mobile-nav pt-3 hidden max-[800px]:block">
+      <div className="mobile-nav pt-1 pb-1 hidden max-[800px]:block">
         <div className="flex justify-between px-3">
           <Link to="/">
           <div className="logoDiv flex justify-items-center gap-2">
@@ -77,7 +77,7 @@ const NavBar = () => {
         </Link>
 
         <div>
-          <Bars3Icon className="h-12 w-12 text-white drop-shadow-lg hover:scale-110 transition-all" onClick={handleMobileNav}/>
+          <Bars3Icon className="h-10 w-10 text-white drop-shadow-lg hover:scale-110 transition-all" onClick={handleMobileNav}/>
         </div>
         </div>
 
