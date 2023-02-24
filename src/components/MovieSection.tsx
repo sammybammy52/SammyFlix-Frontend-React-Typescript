@@ -45,19 +45,23 @@ const MovieSection = ({ title, movies }: Props) => {
         onClick={prev}
       />
       <Swiper
-        spaceBetween={250}
-        slidesPerView={2}
+        spaceBetween={0}
+        slidesPerView={5}
         breakpoints={{
+          300: {
+            slidesPerView:2,
+            spaceBetween:0
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 0,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 0,
           },
         }}
