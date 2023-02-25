@@ -153,6 +153,13 @@ ul{
 	background-color: #ffffff;
 }
 
+.card-holder {
+  scrollbar-width: none;
+}
+
+.card-holder::-webkit-scrollbar {
+  display: none;
+}
 
 /*responsive*/
 @media(max-width: 767px){
